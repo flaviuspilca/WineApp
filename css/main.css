@@ -1,0 +1,1416 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.div-line{
+    display: none;
+    border-top: 1px solid #BBB;
+    position: relative;
+    bottom: 20px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.div-line-2{
+    border-top: 1px solid #BBB;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12%;
+}
+
+
+.arrow{
+    background : #f8f8f8;
+    width : 15px;
+    height : 15px;
+    overflow: hidden;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    margin: -9px auto;
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg);   
+    -ms-transform: rotate(45deg);   
+    -o-transform: rotate(45deg);   
+    transform: rotate(45deg)
+}
+
+
+
+.page-container{
+    width: 100%; 
+}
+
+.first-state{
+    background: url('../img/homebg.png') no-repeat; 
+    background-size: cover;
+    -moz-background-size: cover; 
+    background-position: center top; 
+}
+
+
+.second-state{
+    background: url('../img/hartaoamenilor.png') no-repeat; 
+    background-size: cover;
+    -moz-background-size: cover; 
+    background-position: center top; 
+}
+
+.third-state{
+    background: url('../img/aboutbg.png') no-repeat; 
+    background-size: cover;
+    -moz-background-size: cover; 
+    background-position: center top; 
+}
+
+
+
+.content-container{
+    position : relative;
+    width: 70%;
+    left: 15%;
+    right: 15%;
+    height: 1300px;
+}
+
+.content-container-3{
+    height: 2054px;
+}
+
+
+
+.header{
+    height: 50px;
+    position: relative;
+}
+
+.header-menu{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.share-button{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.user-share-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.header-menu ul{
+    list-style: square;
+}
+
+.share-button input, .footer input, .user-share-button input {
+  background: url('../img/share.png') no-repeat;
+  width: 56px;
+  border: none;
+}
+
+.share-button input:focus, .footer input:focus, .user-share-button input:focus {
+  outline: none;
+}
+
+.share-button input:active, .footer input:active, .user-share-button input:active {
+  -webkit-box-shadow: inset 0px 0px 5px 2px rgba(23,10,138,1);
+  -moz-box-shadow: inset 0px 0px 5px 2px rgba(23,10,138,1);
+  box-shadow: inset 0px 0px 5px 2px rgba(23,10,138,1);
+}
+
+.header-menu ul li{
+    list-style: none;
+    background: url('../img/bullet.png') left center no-repeat;
+    display: list-item;
+    float: left;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 1em;
+
+}
+
+
+.header-menu ul li:first-child{
+    list-style: none;
+    background: transparent;
+}
+
+.header-menu ul a{
+    text-decoration: none;
+    display: block;
+    min-width: 25px;
+    color: #000;
+
+}
+
+.header-menu ul a:hover, #simplemodal-container .user-list a:hover{
+    cursor: pointer;
+}
+
+
+.menu-link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+}
+
+.menu-link-current:after {
+    width: 100%;
+    background: #000;
+}
+
+.menu-link:hover:after {
+    width: 100%;
+    background: #000;
+}
+
+.share-button input{
+    margin: 13px auto;
+}
+
+
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+
+.home-content{
+    position: absolute;
+    max-height: 630px;
+    width: 48%;
+    left: 26%;
+    right: 26%;
+    top: 37%;
+    text-align: center;
+}
+
+.about-content{
+    position: absolute;
+    max-height: 620px;
+    width: 48%;
+    left: 26%;
+    right: 26%;
+    top: 23%;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.account-content{
+    position: absolute;
+    max-height: 620px;
+    width: 48%;
+    left: 26%;
+    right: 26%;
+    top: 37%;
+    text-align: center;
+}
+
+.buttons-area{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.buttons-area-2{
+    position: relative;
+    width: 100%;
+}
+
+.buttons-area-3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.left-button-container{
+    position: absolute;
+    width: 46%;
+    left: 0;
+    text-align: right;
+}
+
+
+.right-button-container{
+    position: absolute;
+    width: 46%;
+    right: 0;
+    text-align: left;
+}
+
+.top-button-container{
+    position: absolute;
+    width: 100%;
+    top: 47px;
+}
+
+
+.bottom-button-container{
+    position: absolute;
+    width: 100%;
+    bottom: 91px;
+}
+
+.left-button-container p, .right-button-container p{
+    font-size: 0.9vw;
+}
+
+.home-content-2{
+    position: absolute;
+    max-height: 620px;
+    width: 34%;
+    left: 33%;
+    right: 33%;
+    bottom: 25%;
+    text-align: center;
+}
+
+.left-button, .right-button, .goto-map-button, .user-left-button, .account-goto-map{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria;
+    font-size: 1vw;
+    font-style: italic;
+    background: #fff;
+    color: #000;
+    border: 1px solid;
+    height: 35px;
+    width: 132px;
+    box-shadow: 3px 2px 0 #000;
+}
+
+.left-button{
+    position: relative;
+    right: 0;
+    background: #9C1719;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.user-left-button{
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #9C1719;
+    color: #fff;
+    border: 1px solid #000;
+    z-index: 999;
+}
+
+.left-button:hover, .user-left-button:hover{
+    background: #920f1a;
+}
+
+.right-button, .account-goto-map{
+    position: relative;
+    left: 0;
+}
+
+.right-button:hover, .account-goto-map:hover{
+    background: #f2f2f2;
+}
+
+label{
+    font-family: Cambria;
+    font-size: 1em;
+    font-style: italic;
+    color: #000;
+  
+}
+
+.left-button:active, .goto-map-button:active, .user-left-button:active{
+    background: #920f1a;
+    color: #fff;
+    outline: none;
+    border: 1px solid #000;
+    box-shadow: none;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.right-button:active, .account-goto-map:active{
+    background: #f2f2f2;
+    color: #000;
+    outline: none;
+    border: 1px solid #000;
+    box-shadow: none;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.first-line{
+    background: url('../img/headline.png') no-repeat;
+    background-size: contain;
+    height: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.second-line{
+    background: url('../img/line.png') no-repeat;
+    background-size: contain;
+    height: 5px;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.popup-first-line{
+    background: url('../img/popupheadline.png') no-repeat;
+    background-size: contain;
+    height: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.popup-second-line{
+    background: url('../img/popupline.png') no-repeat;
+    background-size: contain;
+    height: 5px;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.users-first-line{
+    background: url('../img/userspopupline.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 65%;
+}
+
+.popup-container {
+    display:none; 
+    background: #f8f8f8;
+    height: 100%;
+    width: 100%;
+}
+
+.inner-popup-container{
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    width: 96%;
+    text-align: center;
+}
+
+.inner-popup-container-2{
+    position: absolute;
+    top: 0;
+    left: 2%;
+    right: 2%;
+    bottom: 7%;
+    width: 96%;
+    text-align: center;
+}
+
+.inner-popup-container-3{
+    text-align: center;
+}
+
+.inner-popup-container-3 p{
+    position: relative;
+    left: 8%;
+    right: 8%;
+    width: 84%;
+}
+
+p{
+    font-family: Cambria;
+    font-size: 1vw;
+    font-style: italic;
+}
+
+.circle-number{
+    font-family: Cambria;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 2;
+    padding: 7%;
+}
+
+p.title{
+    font-size: 2vw;
+}
+
+span.title{
+    font-family: Cambria;
+    font-style: italic;
+    font-size: 2vw;
+}
+
+p.user-title{
+    font-size: 1.3vw;
+    position: absolute;
+    top: -7%;
+    left: 0;
+    font-weight: 900;
+}
+
+p.user-desc{
+    font-size: 0.9vw;
+    text-align: left;
+}
+
+
+p.prize-labels{
+    font-size: 1.5vw;
+    color: #C38339;
+}
+
+p.bottom-note{
+    font-family: Cambria;
+    font-size: 1vw;
+    font-style: italic;
+    color: #A33135;
+}
+
+span.number{
+    font-family: Cambria;
+    font-size: 2em;
+    font-style: italic;
+    color: #BB852B;
+    font-weight: 900;
+}
+
+span.local-info-text{
+    font-family: Cambria;
+    font-size: 1em;
+    font-style: italic;
+    color: #000;
+    font-weight: 900;
+}
+
+
+span.local-info-text:last-child{
+    line-height: 1;
+}
+
+span.prize-big{
+    font-size: 1.3em;
+}
+
+.search-filter p{
+    width: 75px;
+    position: relative;
+    left: 4%;
+    top: 7%;
+}
+
+.page-container{
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+
+.page-container-2 {
+  background: transparent;
+}
+
+.harta-oamenilor-content{
+    position: absolute;
+    background: url('../img/steag.png') no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    background-position: center top;  
+    height: 507px;
+    left: 0;
+    right: 0;
+    top: 310px;
+
+}
+
+.top-div{
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    right: 8px;
+    background: url('../img/top.png') no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    background-position: center top;  
+    height: 30px;
+}
+
+.bottom-div{
+    position: absolute;
+    bottom: 8px;
+    left: 6px;
+    right: 6px;
+    background: url('../img/bottom.png') no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    background-position: center top;  
+    height: 30px;
+}
+
+.bonul-tau{
+    border: 1px solid;
+    box-shadow: 2px 3px 0px #bbb;
+    font-family: Cambria;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.1em;
+}
+
+.buttons-container{
+    position: relative;
+    width: 100%;
+}
+
+.rec-button{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria;
+    font-style: italic;
+    background: #fff;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 2em;
+    box-shadow: 4px 4px 0 #bbb;
+}
+
+.rec-button-focus{
+    background: #3D8E2D;
+    color: #fff;
+}
+
+.rec-button:active{
+    box-shadow: none;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+.rec-button:first-child{
+    position: absolute;
+    left: 20%
+}
+
+.rec-button:last-child{
+    position: absolute;
+    right: 20%
+}
+
+.second-part{
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    left: 3%;
+    right: 3%;
+}
+
+.add-from-facebook{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    background: #3F5D9C;
+    color: #fff;
+    font-family: Cambria;
+    font-style: italic;
+    font-size: 1em;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #000;
+    height: 30px;
+}
+
+.add-from-facebook:active{
+    box-shadow: none;
+    position: absolute;
+    left: 15.1%;
+    top: 1px;
+}
+
+.add-to-map{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    width: 70%;
+    background: #3D8E2D;
+    color: #fff;
+    font-family: Cambria;
+    font-style: italic;
+    font-size: 1em;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #000;
+    height: 30px;
+}
+
+.add-to-map:active{
+    box-shadow: none;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+
+.second-part-text, .second-part-contact{
+    width: 31%;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #bbb;
+    font-family: Cambria;
+    font-style: italic;
+}
+
+.second-part-textarea{
+    width: 97%;
+    height: 110px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #bbb;
+    font-family: cambria;
+    font-style: italic;
+    overflow: hidden;
+    resize: none;
+}
+
+.remaining-chars{
+    font-family: Cambria;
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: 900;
+    border: 1px solid #000;
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    right: 2%;
+    top: 58%;
+    box-shadow: 2px 2px 0 #bbb;
+}
+
+.inner-popup-goto-map-container{
+    display: none;
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    width: 94%;
+    text-align: center;
+}
+
+.local-info{
+    position: absolute;
+    top: 58px;
+    left: 13px;
+    background: url('../img/localinfobg.png') no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    background-position: center top; 
+    height: 157px;
+    width: 155px;
+    z-index: 9999;
+    box-shadow: 4px 4px 0 #bbb;
+    line-height: 1;
+    text-align: center;
+    padding: 1em;
+}
+
+.local-info-container{
+    position: relative;
+    height: 100%;
+}
+
+.search-filter{
+    background: url('../img/searchfilter.png') no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    background-position: center top; 
+    height: 45px;
+    width: 125px;
+    box-shadow: 4px 4px 0 #bbb;
+    position: relative;
+    top: 7%;
+    left: 9%;
+    cursor: pointer;
+}
+
+.search-filter:active{
+    margin-left: 1px;
+    margin-top: 17px;
+    box-shadow: none;
+}
+
+.popup-container-2-content{
+    position: relative;
+    width: 75%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    text-align: center;
+    height: 700px;
+}
+
+.popup-container-2-search{
+    background: transparent;
+    font-family: Cambria;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    height: 40px;
+    width: 150px;
+    border: 1px solid #bbb;
+    position: relative;
+    top: 3%;
+}
+
+.user-list{
+    list-style-type: none;
+    position: relative;
+    top: 10%;
+    bottom: 10%;
+    text-align: left;
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3; 
+}
+
+.user-list li{
+    line-height: 2;
+}
+
+.users-list-container{
+    position: absolute;
+    top: 16%;
+    width: 100%;
+    overflow: auto;
+    max-height: 340px;
+}
+
+#simplemodal-container .user-list a{
+    font-family: Cambria;
+    font-style: italic;
+    color: #000;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.user-info{
+    background: transparent;
+    height: 230px;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom : 0;
+}
+
+.user-likes{
+    background: #f8f8f8;
+    position: absolute;
+    bottom: 0;
+    left: 32%;
+    border: 1px solid #000;
+    height: 33px;
+    width: 150px;
+    font-family: Cambria;
+    font-size: 1em;
+    font-style: italic;
+    color: #bbb;
+    line-height: 2;
+}
+
+
+.user-likes span{
+    color: #000;
+}
+
+.user-likes .arrow{
+    position: absolute;
+    border: none;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width : 10px;
+    height : 10px;
+    margin: 11px -6px;
+}
+
+.checkbox-filter{
+    position: relative;
+    top: 20%;
+    width: 100%;
+    display: inline;
+    float: left;
+}
+
+
+
+.checkbox-filter div:last-child{
+    position: absolute;
+    top: 0;
+    right: 20%;
+    width: 60%;
+    font-family: Cambria;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 900;
+    text-align: left;
+}
+
+
+#filterCheck{
+    display: inline-block;
+    border: 1px solid #BBB;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    cursor: pointer;
+}
+
+input#filterCheck {
+    display:none;
+}
+ 
+input#filterCheck + label{
+    background: url('../img/unchecked.png') no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    padding: 0px;
+    position: absolute;
+    left: 4px;
+    top: 15px;
+    cursor: pointer;
+}
+
+
+input#filterCheck:checked + label{
+    background: url('../img/checked.png') no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+
+.youtube-video{
+    width: 100%;
+    height: 315px;
+}
+
+.lines-separator{
+    position: relative;
+    height: 280px;
+    left: -30%;
+    width: 860px;
+}
+
+.separator-left{
+    background: url('../img/medialleft.png') no-repeat;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 12%;
+}
+
+.separator-middle{
+    position: absolute;
+    height: 100%;
+    width: 17%;
+    left: 115px;
+}
+
+.separator-right{
+    background: url('../img/medialright.png') no-repeat;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 69%;
+}
+
+.pinky{
+    background : #FFC2C3;
+}
+
+.stick-to-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.pipein-container{
+    position: relative;
+    height: 90px;
+    width: 100%;
+}
+
+.pipein-left{
+    background: url('../img/pipebg.png') no-repeat;
+    background-size: contain;
+    -moz-background-size: contain; 
+    background-position: center top; 
+    position: absolute;
+    width: 37%;
+    left: 10%;
+    height: 80px;
+}
+
+
+.pipein-right{
+    background: url('../img/pipebg.png') no-repeat;
+    background-size: contain;
+    -moz-background-size: contain; 
+    background-position: center top; 
+    position: absolute;
+    width: 37%;
+    right: 10%;
+    height: 80px;
+}
+
+.popup-pin{
+    display: none;
+    background: url('../img/pin.png') no-repeat;
+    background-size: contain;
+    -moz-background-size: contain; 
+    background-position: center top; 
+    height: 51px;
+    position: absolute;
+    top: -27%;
+    width: 93%;
+}
+
+.pin{
+    background: url('../img/pin.png') no-repeat;
+    height: 62px;
+    width: 50px;
+    background-position: bottom left;
+    cursor: pointer;
+}
+
+.circle{
+    background: url('../img/circle.png') no-repeat;
+    height: 62px;
+    width: 50px;
+    background-position: top right;
+}
+
+.circle-content{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    left: 38%;
+    text-align: center;
+    }
+
+
+#pin-1{
+    position: absolute;
+    top: 13%;
+    left: 30%;
+}
+
+#pin-2{
+    position: absolute;
+    top: 17%;
+    left: 56%;
+}
+
+#pin-3{
+    position: absolute;
+    top: 15%;
+    left: 75%;
+}
+
+#pin-4{
+    position: absolute;
+    top: 19%;
+    left: 18%;
+}
+
+#pin-5{
+    position: absolute;
+    top: 22%;
+    left: 38%;
+}
+
+#pin-6{
+    position: absolute;
+    top: 26%;
+    left: 20%;
+}
+
+#pin-7{
+    position: absolute;
+    top: 29%;
+    left: 61%;
+}
+
+#pin-8{
+    position: absolute;
+    top: 33%;
+    left: 13%;
+}
+
+#pin-9{
+    position: absolute;
+    top: 33%;
+    left: 46%;
+}
+
+#pin-10{
+    position: absolute;
+    top: 35%;
+    left: 21%;
+}
+
+#pin-11{
+    position: absolute;
+    top: 37%;
+    left: 55%;
+}
+
+#pin-12{
+    position: absolute;
+    top: 42%;
+    left: 33%;
+}
+
+#pin-13{
+    position: absolute;
+    top: 46%;
+    left: 58%;
+}
+
+#pin-14{
+    position: absolute;
+    top: 50%;
+    left: 39%;
+}
+
+#pin-15{
+    position: absolute;
+    top: 49%;
+    left: 78%;
+}
+
+
+.nume-oras{
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    background: url('../img/orasbg.png') no-repeat;
+    width: 103px;
+    height: 29px;
+    left: 18px;
+    float: left;
+    font-family: Cambria;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
